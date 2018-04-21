@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: melody-eureka-server
+server:
+  port: 8081
+eureka:
+  instance:
+    hostname: melody.test.com
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    serviceUrl: 
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
