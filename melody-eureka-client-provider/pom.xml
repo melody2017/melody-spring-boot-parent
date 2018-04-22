@@ -9,22 +9,21 @@
 		<artifactId>melody-spring-boot-parent</artifactId>
 		<version>1.0.0</version>
 	</parent>
-	<artifactId>melody-eureka-server</artifactId>
-	<name>melody-eureka-server</name>
+	<artifactId>melody-eureka-client-provider</artifactId>
+	<name>melody-eureka-client-provider</name>
 	<url>http://maven.apache.org</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 	<dependencies>
-		<!-- eureka 注册中心 -->
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-eureka-server</artifactId>
-		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-eureka</artifactId>
 		</dependency>
 	</dependencies>
 </project>
